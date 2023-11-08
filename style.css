@@ -12,7 +12,7 @@ body {
 header {
 	font-size: 1.5rem;
 }
-header, form {
+header, form, footer {
 	min-height: 20vh;
 	display: flex;
 	justify-content: center;
@@ -34,4 +34,7 @@ form button:hover {
 	background: #a393eb;
 	color: white;
 }
-
+footer {
+	margin-top: 20%;
+	font-size: 0.8rem;
+}
