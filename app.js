@@ -15,7 +15,7 @@ function addTask(e){
   todoDiv.classList.add("task");
   //Create Li in todo-list
   const todoLi = document.createElement("li");
-  todoLi.innerText = "New task";
+  todoLi.innerText = todoInput.value;
   todoLi.classList.add("task-item");
   //Connect Div task with Li
   todoDiv.appendChild(todoLi);
@@ -33,4 +33,6 @@ function addTask(e){
   todoDiv.appendChild(trashButton);
   //Connect Ul with Div task
   todoList.appendChild(todoDiv);
+  //Clear Todo Input value
+  todoInput.value = "";
 }

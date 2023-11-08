@@ -5,36 +5,76 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(68.6deg, rgb(252, 165, 241) 1.8%, rgb(181, 255, 255) 100.5%);
+  background: linear-gradient(
+    68.6deg,
+    rgb(252, 165, 241) 1.8%,
+    rgb(181, 255, 255) 100.5%
+  );
   color: #27296d;
   min-height: 100vh;
 }
 header {
-	font-size: 1.5rem;
+  font-size: 1.5rem;
 }
-header, form, footer {
-	min-height: 20vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+header,
+form,
+footer {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-form input, form button {
-	padding: 0.5rem;
-	font-size: 1.5rem;
-	border: none;
-	background: white;
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  background: white;
 }
 form button {
-	color: #a393eb;
-	background: white;
-	cursor: pointer;
-	transition: all 0.3s ease;
+  color: #a393eb;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 form button:hover {
-	background: #a393eb;
-	color: white;
+  background: #a393eb;
+  color: white;
 }
 footer {
-	margin-top: 20%;
-	font-size: 0.8rem;
+  margin-top: 20%;
+  font-size: 0.8rem;
+}
+.todo-list-cotainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-list {
+  list-style: none;
+  min-width: 30%;
+}
+.task {
+  background: white;
+  margin: 0.5rem;
+  color: #27296d;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task li {
+  flex: 1;
+}
+.mark-btn,
+.trash-btn {
+  border: none;
+  background: #7dace4;
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.mark-btn {
+  background: #95e8d7;
 }
